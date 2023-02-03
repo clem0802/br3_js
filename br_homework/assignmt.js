@@ -36,7 +36,6 @@ if (integer_1 > integer_2) {
 } else {
     console.log(`The two numbers are equal, yet one must be bigger than the other. Try again.`);
 }
-console.log(larger);
 
 // (3b) Program checking whether an integer is an even or an odd number
 let number = parseInt(prompt("Please enter a number:"));
@@ -45,7 +44,6 @@ if (number % 2 == 0) {
 } else {
     console.log("The number entered is an odd one.");
 }
-console.log(number);
 
 
 // ---------------------------------
