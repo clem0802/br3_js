@@ -67,7 +67,7 @@ function playerPlay(){
     do {
         let select = prompt("Please type 'rock', 'paper', or 'scissors'.");
         if(select == null){
-            console.log(`Please play the game properly.\nEnter 'rock', 'paper', or 'scissors' to play.`)
+            continue;
         } else {
             let selectLowerCase = select.toLowerCase(); 
             // https://www.programiz.com/javascript/library/array/includes
@@ -75,6 +75,8 @@ function playerPlay(){
             if(computerChoice.includes(selectLowerCase)){
                 validInput = true;
                 return selectLowerCase;
+            } else {
+                console.log(`Please play the game properly.\nEnter 'rock', 'paper', or 'scissors' to play.`)
             }
         }
     } while(validInput == false)
